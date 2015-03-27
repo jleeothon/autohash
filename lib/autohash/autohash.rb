@@ -36,8 +36,8 @@ class AutoHash < Hash
     # element's automatic hash is calculated based on <code>elem</code> and
     # put in this Hash.
     def << elem
-        unless @element_type.nil? or elem.instance_of? @element_type
-            raise "Cannot add element of type #{elem.class}"
+        unless @element_type.nil? or elem.is_a?(@element_type)
+            raise TypeError.new("Cannot add element of type #{elem.class}")
         end
         self[@hash.call(elem)] = elem
     end
