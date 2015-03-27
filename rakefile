@@ -11,7 +11,7 @@ task :help do
     puts "  tests            runs tests"
 end
 
-task :default => [:help]
+task :default => [:tests]
 
 task :console do
     sh "irb -I lib -r autohash.rb"
