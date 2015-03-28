@@ -15,7 +15,7 @@ end
 class CuteRedPanda < RedPanda
 end
 
-class TestRedPanda < MiniTest::Test
+class TestRedPanda < MiniTest::Unit::TestCase
 
   def setup
     @a = AutoHash.new(RedPanda) do |elem|
