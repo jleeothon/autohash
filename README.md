@@ -1,10 +1,12 @@
-# autohash [![Build Status](https://travis-ci.org/jleeothon/autohash.svg?branch=master)](https://travis-ci.org/jleeothon/autohash)
+# autohash
+
+[![GitHub version](https://badge.fury.io/gh/jleeothon%2Fautohash.svg)](http://badge.fury.io/gh/jleeothon%2Fautohash) [![Gem Version](https://badge.fury.io/rb/autohash.svg)](http://badge.fury.io/rb/autohash) [![Build Status](https://travis-ci.org/jleeothon/autohash.svg?branch=master)](https://travis-ci.org/jleeothon/autohash)
 
 The gem introduces Hashes with automatic keys based on their values in Ruby. It behaves very similar to sets, but are more predictable because you can define your own value to use as a key.
 
 For example:
 
-```
+```Ruby
 require 'autohash'
 
 class Dog
