@@ -2,7 +2,7 @@ require 'minitest/autorun'
 
 load 'autohash.rb'
 
-class TestNil < MiniTest::Test
+class TestNil < MiniTest::Unit::TestCase
 
   def setup
     @a = AutoHash.new(nil) do |elem|
